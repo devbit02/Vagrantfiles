@@ -1,2 +1,2 @@
 # Vagrantfiles
-Various Vagrantfiles I use.
+This holds the various Vagrantfiles that I use.
