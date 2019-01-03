@@ -4,6 +4,9 @@ Vagrant.configure("2") do |config|
     # Box
     config.vm.box = "ubuntu/bionic64"
 
+    # Network
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+
     # Setup
     config.vm.provision "docker"
     config.vm.provision :shell, :path => "scripts/install.sh"
