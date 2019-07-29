@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 sudo apt-get update --fix-missing
-sudo apt-get install -y python-pip
-sudo apt-get install -q -y make git curl vim
-sudo apt-get 
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install python-pip
+sudo apt-get install -qy make git curl vim
+sudo apt-get -qy install postgresql
+sudo apt-get
 pip install awscli
